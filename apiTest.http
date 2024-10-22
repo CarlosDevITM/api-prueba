@@ -1,0 +1,28 @@
+@baseUrl = http://localhost
+###
+GET {{baseUrl}}/
+###
+
+GET {{baseUrl}}/api/consoles
+###
+
+GET {{baseUrl}}/api/consoles/1
+###
+
+POST {{baseUrl}}/api/consoles
+Content-Type: "application/json"
+{
+    "id": "1",
+    "console": "PC"
+}
+
+###
+DELETE {{baseUrl}}/api/consoles/4
+
+###
+PUT http://localhost/api/consoles/2 
+Content-Type: application/json
+{
+    "id": "1",
+    "console": "PC"
+}
